@@ -1,0 +1,67 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" >-->
+<!--<head>-->
+<!--<meta charset="UTF-8">-->
+<!--<title>information</title>-->
+<!--<link rel="stylesheet" href="information.css">-->
+<!--<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">-->
+
+<!--</head>-->
+<!--<body>-->
+<!--<div >-->
+<div class="info-top">
+    <div><a href="#" class="back" ui-sref="home"></a></div>
+    <div class="restaurant-panel" >
+        <div class="logo">
+            <img src="{{info.icon}}">
+        </div>
+        <div class="i-restaurant" >
+            <h3  class="supplierName">
+                <a href="#" >{{info.name}}</a>
+                <span ng-show="{{!info.status}}">店铺休息</span>
+                <span ng-show="{{info.status}}">正在营业</span>
+            </h3>
+            <div class="i-star">
+                <i class="fa fa-star "  aria-hidden="true"></i>
+                <i class="fa fa-star "  aria-hidden="true"></i>
+                <i class="fa fa-star "  aria-hidden="true"></i>
+                <i class="fa fa-star "  aria-hidden="true"></i>
+                <i class="fa fa-star-half-o "  aria-hidden="true"></i>
+            </div>
+            <span class="score"> {{info.star}}</span>
+            <span class="sales"> 月销量{{info.sales}}份</span>
+        </div>
+        <div  class="i-nav">
+            <a class="nav" href="#"  ui-sref=".menu" >菜单</a>
+            <a class="nav" href="#" ui-sref=".comment" >评价</a>
+            <a class="nav " href="#" ui-sref=".message">留言</a>
+        </div>
+
+        <div class="favor" >
+            <a href="#"><p>未收藏</p></a>
+        </div>
+
+        <div class="reminder">
+            <span class="num">{{info.time}}</span>
+            <span class="unit">分钟</span>
+            <p>送餐速度</p></div>
+
+        <div class="reminder">
+            <span class="num" >{{info.send}}</span>
+            <span class="unit">元</span>
+            <p>起送价</p></div>
+    </div>
+    <!--<div class="notice1 " style="text-align: center;">-->
+        <!--<div class="icon-notice f-all">-->
+        <!--</div><span> 暂不送外卖</span>-->
+    <!--</div>-->
+</div>
+<div class="content">
+     <div ui-view></div>
+</div>
+</div>
+<!--<script src="../../resource/angular.min.js"></script>-->
+<!--<script src="../../resource/angular-ui-router.js"></script>-->
+<!--<script src="information.js"></script>-->
+<!--</body>-->
+<!--</html>-->

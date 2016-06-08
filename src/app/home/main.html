@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main">
+        <div class="school">
+            <div class="s-img"></div>
+            <div class="school-name">西北工业大学（长安校区）</div>
+        </div>
+        <div class="ad">
+            <a href="#"><img alt="flymeal" src="../../resource/images/ad.jpg"></a>
+        </div>
+        <div class="banner">
+            <div class="sel">
+                <select ng-model="data.way" ng-change="selectOrder(data.way)" ng-options="way.id as way.name for way in orderData"></select>
+            </div>
+            <div class="sel">
+                <select ng-model="data.style" ng-change="selectStyle(data.style)" ng-options="style.id as style.name for style in styleData"></select>
+            </div>
+            <div class="che">
+                <div class="line"></div>
+                <div class="checkbox-tag" ng-class="{'checked':isCheck}"  ng-click="selectCanIPay()">在线支付</div>
+            </div>
+            <div class="che">
+                <div class="line"></div>
+                <div class="checkbox-tag" ng-class="{'checked':check}" ng-click="selectIceTea()">冰红茶特惠</div>
+            </div>
+            <div class="search" >
+                <input type="text" placeholder="搜索餐厅" ng-model="search">
+            </div>
+        </div>
+        <div class="lists">
+            <a href="#"  class="restaurant" ng-repeat="item in showList | filter:search | styleFilter:data.style | iPayFilter:isCheck | iceTeaFilter:check | orderBy:selectOrder(data.way)" ng-class="{'opacity':{{!item.status}}}" ui-sref="information({id: item.id})" ng-click="change(item.id)">
+                <div class="restaurant-left">
+                    <div class="restaurant-icon"><img src="{{item.icon}}"></div>
+                    <div class="restaurant-status" ng-show="{{!item.status}}">休息中</div>
+                </div>
+                <div class="restaurant-right">
+                    <div class="restaurant-name">
+                        <span>{{item.name}}</span>
+                        <img ng-show="{{item.iPay}}" alt="付" src="../../resource/images/payment.png">
+                        <img ng-show="{{item.iceTea}}" alt="惠" src="../../resource/images/iceTea.gif">
+                    </div>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true" ng-repeat="y in  stars(item.star) track by $index" ></i>
+                        <!--<i class="fa fa-star "  aria-hidden="true"></i>-->
+                        <!--<i class="fa fa-star "  aria-hidden="true"></i>-->
+                        <!--<i class="fa fa-star "  aria-hidden="true"></i>-->
+                        <!--<i class="fa fa-star-half-o "  aria-hidden="true"></i>-->
+                    </div>
+                    <div class="info">{{item.send}}元起，{{item.time}}分钟内送达</div>
+                    <div class="business">{{item.meals}}</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

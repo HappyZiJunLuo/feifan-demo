@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="homeApp">
+<head>
+    <meta charset="UTF-8">
+    <title>flymeal-home</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../information/information.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../my-order/my-order.css">
+</head>
+<body>
+<div class="all" ng-controller="homeController" >
+    <div class="top">
+        <div class="phone"><a href="#">手机客户端</a></div>
+        <a href="#" class="logo" ui-sref="home"></a>
+        <div class="menu-pannel">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+        </div>
+        <div class="user-pannel">
+            <a href="#">美食车(0)</a>
+            <a href="#" ui-sref="my-order">我的订单</a>
+            <a href="#">积分换礼</a>
+        </div>
+    </div>
+
+    <div ui-view>
+
+    </div>
+</div>
+<script src="../../resource/angular.min.js"></script>
+<script src="../../resource/angular-ui-router.js"></script>
+<script src="home.js"></script>
+
+</body>
+</html>

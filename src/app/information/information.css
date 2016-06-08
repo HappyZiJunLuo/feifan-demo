@@ -1,0 +1,202 @@
+/** {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*font-family: "Microsoft YaHei";*/
+/*}*/
+/*a{*/
+    /*text-decoration: none;*/
+/*}*/
+
+.info-top {
+    margin: 0 auto;
+    width: 1000px;
+    height: auto;
+    padding-top: 20px;
+    position: relative;
+}
+
+.info-top .back {
+    display: block;
+    height: 52px;
+    width: 53px;
+    position: absolute;
+    top: 22px;
+    left: -63px;
+    background: url(../../resource/images/small-bg-images.png) no-repeat 0  2px;
+}
+.info-top .back:hover {
+    background: url(../../resource/images/small-bg-images.png) no-repeat 0  -51px;
+}
+
+.info-top .restaurant-panel {
+    width: 956px;
+    height: 106px;
+    padding: 20px 22px;
+    background-color: #ffffff;
+    /*border-radius: 2px;*/
+    box-shadow: 0 1px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.info-top .restaurant-panel:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.info-top .logo {
+    float: left;
+}
+.info-top .logo img {
+
+    width: 66px;
+    height: 66px;
+}
+
+.info-top .i-restaurant {
+    float: left;
+    width: 260px;
+    margin: 7px 15px 0;
+}
+
+.info-top .supplierName {
+    width: 260px;
+    height: 25px;
+    font-weight: bold;
+    color: #535353;
+    margin-top: 5px;
+}
+
+.info-top .supplierName:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.info-top .supplierName a{
+    max-width: 180px;
+    float: left;
+    color: #535353;
+    font-size: 18px;
+}
+
+.info-top .supplierName span {
+    font-size: 14px;
+    font-weight: normal;
+    float: left;
+    margin-left: 20px;
+    /*height: 31px;*/
+    /*display: inline-block;*/
+    color: #ff7c24;
+    line-height: 25px;
+}
+.info-top .i-star {
+    float: left;
+    margin-top: 3px;
+    height: 15px;
+    width: 80px;
+    color: #ffc428;
+    line-height: 15px;
+}
+
+.info-top .i-star i {
+    margin: 0 -2px;
+}
+
+.info-top .score {
+    font-size: 14px;
+    color: #444;
+}
+
+.info-top .sales {
+    margin-left: 5px;
+    color: #666;
+    font-size: 13px;
+}
+
+.info-top .i-nav {
+    float: left;
+    color: #ffc700;
+    margin-top: 23px;
+
+}
+
+.info-top .i-nav:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.info-top a.nav {
+    float: left;
+    margin-right: 45px;
+    padding: 2px 8px;
+    color: #010101;
+    font-size: 18px;
+}
+
+.info-top a.nav:hover {
+    text-decoration: none;
+}
+
+.info-top a.nav:focus {
+    background: #ff6931;
+    color: #fff;
+    text-decoration: none;
+}
+
+.info-top .favor {
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5px;
+}
+
+.info-top .favor a{
+    background: url(../../resource/images/small-bg-images.png) no-repeat -353px -98px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.info-top .favor a:hover {
+    background: url(../../resource/images/small-bg-images.png) no-repeat -397px -98px;
+}
+
+.info-top .favor a p {
+    padding-top: 41px;
+    font-size: 13px;
+    color: #535353;
+}
+
+.info-top .reminder {
+    float: right;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    margin-top: -10px;
+    margin-left: 10px;
+
+}
+
+.info-top .reminder .num{
+    color: #ff6931;
+    font-size: 36px;
+}
+
+.info-top .reminder .unit {
+    color: #ff6931;
+    font-size: 14px;
+}
+
+.info-top .reminder p {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+.content {
+    width: 1000px;
+    height: 200px;
+    margin: 20px auto 0;
+    border: 1px solid #cccccc;
+}
+

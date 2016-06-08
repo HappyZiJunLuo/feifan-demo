@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei';
+    font-size: 14px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+.all {
+    background: url(../../resource/images/all-bg.jpg) no-repeat fixed;
+    min-width: 1000px;
+    height: auto;
+}
+
+.top {
+    height: 56px;
+    border-top: 4px solid #ff6931;
+    overflow: visible;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.top:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.top div a:hover {
+    text-decoration: none;
+    color: #888;
+}
+
+.top .phone {
+    float: left;
+}
+
+.top .phone a{
+    display: block;
+    width: 150px;
+    height: 25px;
+    margin: 15px 0 0 20px;
+    padding: 1px 0 0 20px;
+    color: #ff6931;
+    background: url(../../resource/images/small-bg-images.png) no-repeat -106px -50px;
+}
+
+.top .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 150px;
+    height: 56px;
+    margin: 0 auto;
+    background: url(../../resource/images/small-bg-images.png) no-repeat -408px -140px;
+}
+
+.top .user-pannel {
+    float: right;
+    height: 56px;
+    line-height: 56px;
+    margin-right: 10px;
+}
+
+.top .user-pannel a {
+    color: #ff6931;
+    padding-right: 9px;
+}
+
+.top .menu-pannel {
+    float: right;
+    height: 56px;
+    line-height: 56px;
+    margin-left: 5px;
+    margin-right: 26px;
+}
+
+.top .menu-pannel a {
+    color: #ff6931;
+    padding-right: 9px;
+}
+
+.top .user-pannel a:nth-child(3) {
+    border-right: 2px solid #ccc;
+}
+
+
+

@@ -1,0 +1,217 @@
+
+
+.main {
+    margin: 0 auto;
+    width: 1002px;
+    height: auto;
+}
+
+.main .school {
+    height: 80px;
+    position: relative;
+}
+
+.main .school .s-img {
+    position: absolute;
+    bottom: -45px;
+    left: 20px;
+    width: 92px;
+    height: 92px;
+    z-index: 100;
+    background: url(../../resource/images/small-bg-images.png) no-repeat -5px -258px;
+}
+.main .school .school-name {
+    position: absolute;
+    top: 53px;
+    left: 128px;
+    color: #535353
+}
+
+.main .ad a{
+    display: block;
+    height: 130px;
+}
+
+.main .ad img {
+    width: 1002px;
+}
+
+.main .banner {
+    border-top: 2px solid #ff6931;
+    border-bottom: 1px solid #f5f5f5;
+    background-color: #fcfcfc;
+    height: 47px;
+    font-size: 13px;
+}
+
+.main .banner .sel {
+    float: left;
+    width: 85px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-top: 14px;
+    background: #f8f8f8;
+}
+
+.banner .sel select{
+    width: 85px;
+    border: none;
+    color: #535353;
+}
+.main .banner .che{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.banner .che .line{
+    float: left;
+    border-left: 1px solid #ccc;
+    width: 1px;
+    height: 25px;
+    margin-top: 1px;
+    margin-right: 6px;
+}
+
+.checkbox-tag {
+    display: inline-block;
+    padding-left: 25px;
+    margin-top: 5px;
+    background: url(../../resource/images/small-bg-images.png) no-repeat -560px -1px;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.banner .che .checkbox-tag:hover {
+    color:#ff6931;
+}
+
+.main .banner .checked{
+    background-position: -560px -23px;
+}
+
+.main .banner .search {
+    float: right;
+    margin-right: 20px;
+    margin-top: 12px;
+}
+
+.banner .search input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 22px;
+    width: 125px;
+    padding-left: 3px;
+    padding-top: 0px;
+    background: #f8f8f8 url(../../resource/images/small-bg-images.png) no-repeat 103px -548px;
+    color: #535353;
+    line-height: 22px;
+}
+
+.main .lists {
+    width: 1002px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    background-color: #fff;
+}
+
+.main .lists:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main .lists .restaurant{
+    float: left;
+    display: block;
+    width: 332px;
+    height: 116px;
+    padding-right: 1px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    color: #535353;
+}
+.opacity {
+    opacity: 0.5;
+}
+.main .lists .restaurant:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main .lists .restaurant:hover {
+    box-shadow: 0 0 2px 0 #ffc700;
+}
+
+.lists .restaurant .restaurant-left{
+    float: left;
+    margin: 15px 15px 0 20px;
+}
+
+.restaurant .restaurant-left .restaurant-icon img{
+    height: 60px;
+    width: 60px;
+}
+
+.restaurant .restaurant-left .restaurant-status{
+    color: #999;
+    border: 1px solid #999;
+    padding: 1px;
+    text-align: center;
+    margin-top: 9px;
+    font-size: 12px;
+}
+
+.lists .restaurant .restaurant-right{
+    float: right;
+    margin: 15px 20px 0 0;
+    width: 215px;
+}
+
+.restaurant .restaurant-right .restaurant-name {
+    height: 16px;
+    line-height: 16px;
+    margin-bottom: 9px;
+    color: #535353;
+}
+
+.restaurant-right .restaurant-name:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.restaurant-right .restaurant-name span{
+    float: left;
+    margin-right: 10px;
+}
+
+.restaurant .restaurant-right .star {
+    height: 15px;
+    width: 80px;
+    margin-bottom: 9px;
+    /*background: url(../../resource/images/small-bg-images.png) no-repeat -100px -120px;*/
+}
+
+.restaurant .restaurant-right .star i{
+    float: left;
+    color: #ffc428;
+    margin: 0 1px;
+}
+
+.restaurant .restaurant-right .info {
+    margin-bottom: 9px;
+    color: #999;
+    font-size: 12px;
+}
+
+.restaurant .restaurant-right .business {
+    color: #999;
+    height: 16px;
+    font-size: 12px;
+    /*text-overflow: ellipsis;*/
+    /*overflow: hidden;*/
+}

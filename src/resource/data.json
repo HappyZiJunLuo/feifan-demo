@@ -1,0 +1,170 @@
+{
+  "init":[
+    {
+      "way": 1,
+      "style": 1
+    }
+  ],
+  "lists": [
+    {
+      "id": 1,
+      "name": "小百福烧鸭饭",
+      "icon": "../../resource/images/list-1.png",
+      "star": 4,
+      "stars":[0,0,0],
+      "sales": 2,
+      "send": 12,
+      "time": 26,
+      "iPay": true,
+      "status": true,
+      "meals":"中餐",
+      "type": 2
+
+    },
+    {
+      "id": 2,
+      "name": "百姓家常菜",
+      "icon": "../../resource/images/list-2.png",
+      "star": 4,
+      "sales": 40,
+      "send": 35,
+      "time": 33,
+      "iPay": false,
+      "status": true,
+      "meals":"中餐",
+      "type": 2
+    },
+    {
+      "id": 3,
+      "name": "首尔紫菜包饭",
+      "icon": "../../resource/images/list-3.jpg",
+      "star": 4,
+      "sales": 11,
+      "send": 10,
+      "time": 30,
+      "iPay": true,
+      "status": false,
+      "meals":"日韩",
+      "type": 4
+    },
+    {
+      "id": 4,
+      "name": "迈德思",
+      "icon": "../../resource/images/list-4.png",
+      "star": 4,
+      "sales": 26,
+      "send": 30,
+      "time": 38,
+      "iPay": false,
+      "status": false,
+      "meals":"西餐",
+      "type": 3
+    },
+    {
+      "id": 5,
+      "name": "CAKE心语",
+      "icon": "../../resource/images/list-5.png",
+      "star": 5,
+      "sales": 19,
+      "send": 15,
+      "time": 60,
+      "iPay": false,
+      "status": false,
+      "meals":"糕点",
+      "type": 5
+    },
+    {
+      "id": 6,
+      "name": "原浆葡萄酒坊",
+      "icon": "../../resource/images/list-6.png",
+      "star": 3,
+      "sales": 1,
+      "send": 0,
+      "time": 32,
+      "iPay": false,
+      "status": false,
+      "meals":"饮料",
+      "type": 6
+    },
+    {
+      "id": 7,
+      "name": "泡芙新语",
+      "icon": "../../resource/images/list-7.png",
+      "star": 3,
+      "sales": 30,
+      "send": 17,
+      "time": 39,
+      "iPay": true,
+      "status": false,
+      "meals":"小吃",
+      "type": 7
+    },
+    {
+      "id": 8,
+      "name": "水之源川菜",
+      "icon": "../../resource/images/list-8.png",
+      "star": 4,
+      "sales": 42,
+      "send": 25,
+      "time": 18,
+      "iPay": true,
+      "status": false,
+      "meals":"中餐",
+      "type": 2,
+      "iceTea": true
+    }
+  ],
+  "orders":[
+    {
+      "id": 1,
+      "name":"综合排序"
+    },
+    {
+      "id": 2,
+      "name":"销量排序"
+    },
+    {
+      "id": 3,
+      "name":"评价排序"
+    },
+    {
+      "id": 4,
+      "name":"送餐速度"
+    },
+    {
+      "id": 5,
+      "name":"起送价"
+    }
+  ],
+  "styles":[
+    {
+      "id": 1,
+      "name":"全部种类"
+    },
+    {
+      "id": 2,
+      "name":"中餐"
+    },
+    {
+      "id": 3,
+      "name":"西餐"
+    },
+    {
+      "id": 4,
+      "name":"日韩"
+    },
+    {
+      "id": 5,
+      "name":"糕点"
+    },
+    {
+      "id": 6,
+      "name":"饮料"
+    },
+    {
+      "id": 7,
+      "name":"小吃"
+    }
+
+  ]
+}
